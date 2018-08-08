@@ -122,7 +122,7 @@ class StravaSensor(Entity):
         """Return the unit of measurement of this entity, if any."""
         return self._unit_of_measurement
 
-    def _set_state(self, new_state):
+    def set_state(self, new_state):
         self._state = new_state
     
 class StravaData:
@@ -139,6 +139,7 @@ class StravaData:
         self._devices = devices
         self._athlete_stats = None
 
+    @asyncio.coroutine
     def fetch_data(self, *_):
         """Get the departure board."""
         athlete_stats = self._strava_client.get_athlete_stats(athlete_id=self._athlete.id)
@@ -147,6 +148,7 @@ class StravaData:
         yield from self.update_devices()
         async_call_later(self.hass, 2*60, self.fetch_data)
 
+    @asyncio.coroutine
     def update_devices(self, *_):
         if not self._athlete_stats:
             return
@@ -155,7 +157,7 @@ class StravaData:
         for sensor_type in self._athlete_stats:
             for device in self._devices:
                 if device.type == sensor_type:
-                    device._set_state(self._athlete_stats[sensor_type])
+                    device.set_state(self._athlete_stats[sensor_type])
                     tasks.append(device.async_update_ha_state())
 
         if tasks:
