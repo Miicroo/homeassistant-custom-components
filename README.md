@@ -1,5 +1,5 @@
 # homeassistant-strava
-This is a Strava component for HomeAssistant. It uses stravalib to generate statistics as sensors.
+This is a Strava component for HomeAssistant. It uses stravalib to generate statistics as sensors. The sensors are checked every other minute.
 
 ## How to setup
 
