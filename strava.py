@@ -133,7 +133,8 @@ class StravaData:
         self.hass = hass
         
         from stravalib import Client
-        self._strava_client = Client(access_token=accesstoken)
+        from stravalib.util import limiter
+        self._strava_client = Client(access_token=accesstoken, rate_limiter=limiter.DefaultRateLimiter())
         self._athlete = self._strava_client.get_athlete()
 
         self._devices = devices
@@ -141,11 +142,19 @@ class StravaData:
 
     @asyncio.coroutine
     def fetch_data(self, *_):
-        """Get the departure board."""
-        athlete_stats = self._strava_client.get_athlete_stats(athlete_id=self._athlete.id)
-        self._athlete_stats = athlete_stats.to_dict()
+        """Get the athlete stats."""
+        stats_fetched_ok = False
+        from requests.exceptions import ConnectionError
+        try:
+            athlete_stats = self._strava_client.get_athlete_stats(athlete_id=self._athlete.id)
+            stats_fetched_ok = True
+        except ConnectionError as e:
+           _LOGGER.error("Failed to get athlete stats due to %s", e)
 
-        yield from self.update_devices()
+        if stats_fetched_ok:
+            self._athlete_stats = athlete_stats.to_dict()
+            yield from self.update_devices()
+            
         async_call_later(self.hass, 2*60, self.fetch_data)
 
     @asyncio.coroutine
