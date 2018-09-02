@@ -23,7 +23,7 @@ This is a Strava component for HomeAssistant. It uses stravalib to generate stat
 ### Setting up HomeAssistant
 1. In your homeassistant config directory, create a strava sensor file. The path should look like this: **my-ha-config-dir/custom_components/sensor/strava.py**
 2. Copy the contents of strava.py in this git-repo to your newly created file in HA
-3. Set up the number of sensors you want. If you do not specify any values, the biggest_ride_distance will be used as default:
+3. Set up the number of sensors you want. If you do not specify any sensors, the `biggest_ride_distance` will be used as default:
 ~~~~
 # Example configuration.yaml entry
 sensor:
