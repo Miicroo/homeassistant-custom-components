@@ -69,7 +69,7 @@ TOTALS_TYPES = {
 
 PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
     vol.Required(CONF_ACCESS_TOKEN): cv.string,
-    vol.Optional(CONF_RESOURCES, default={CONF_TYPE: ATTR_BIGGEST_RIDE_DISTANCE}):
+    vol.Optional(CONF_RESOURCES, default={CONF_TYPE: ATTR_BIGGEST_RIDE_DISTANCE, CONF_ARG: ATTR_TOTAL_DISTANCE}):
         vol.All(cv.ensure_list, [vol.Schema({
             vol.Required(CONF_TYPE): vol.In(SENSOR_TYPES),
             vol.Optional(CONF_ARG): vol.In(TOTALS_TYPES),
@@ -167,6 +167,7 @@ class StravaData:
     def __init__(self, hass, accesstoken, devices):
         """Initialize the sensor."""
         self.hass = hass
+
         from stravalib import Client
         from stravalib.util import limiter
         self._strava_client = Client(access_token=accesstoken, rate_limiter=limiter.DefaultRateLimiter())
@@ -184,8 +185,11 @@ class StravaData:
         try:
             athlete_stats = self._strava_client.get_athlete_stats(athlete_id=self._athlete.id)
             stats_fetched_ok = True
-        except ConnectionError as e:
-           _LOGGER.error("Failed to get athlete stats due to %s", e)
+        except:
+           _LOGGER.warn("Failed to get athlete stats, re-initiating client")
+
+           from stravalib import Client
+           from stravalib.util import limiter
            self._strava_client = Client(access_token=self._accesstoken, rate_limiter=limiter.DefaultRateLimiter())
 
         if stats_fetched_ok:
