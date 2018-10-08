@@ -1,5 +1,5 @@
 # Swedish calendar
-This is a HomeAssistant component for showing data about swedish holidays. It uses the ai at *api.dryg.net* to generate statistics as sensors. The sensors are checked once per day.
+This is a HomeAssistant component for showing data about swedish holidays. It uses the api at *api.dryg.net* to generate statistics as sensors. The sensors are checked once per day.
 
 ## How to setup
 
@@ -31,13 +31,10 @@ flag_day
 
 All sensors are added per default. If a certain sensor isn't available, it will be hidden (for example: type of holiday will be hidden if there is no ongoing holiday). If you do not want a sensor at all, you can manually exclude it:
 ~~~~
-# Example configuration.yaml entry
+# Example configuration.yaml entry with exclusion
 sensor:
   - platform: swedish_calendar
     exclude:
       - date
       - day_before_workfree_holiday
 ~~~~
-
-## TODO
-* Make sure update is at midnight and not just 24 hours after restart

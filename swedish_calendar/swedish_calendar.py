@@ -135,6 +135,13 @@ class SwedishCalendarData:
         def get_url(base_url):
             return base_url + dt_util.now().strftime('%Y/%m/%d')
 
+        def get_seconds_until_midnight():
+            one_day_in_seconds = 24 * 60 * 60
+
+            now = dt_util.now()
+            total_seconds_passed_today = (now.hour*60*60) + (now.minute*60) + now.second
+
+            return one_day_in_seconds - total_seconds_passed_today
         try:
             websession = async_get_clientsession(self.hass)
             with async_timeout.timeout(10, loop=self.hass.loop):
@@ -155,7 +162,7 @@ class SwedishCalendarData:
             return
 
         await self.updating_devices()
-        async_call_later(self.hass, 24*60*60, self.fetching_data)
+        async_call_later(self.hass, get_seconds_until_midnight(), self.fetching_data)
 
     async def updating_devices(self, *_):
         """Find the current data from self.data."""
@@ -172,6 +179,8 @@ class SwedishCalendarData:
 
             # pylint: disable=protected-access
             if new_state != device._state:
+                if type(new_state) is list:
+                    new_state = ",".join(new_state)
                 device._state = new_state
                 tasks.append(device.async_update_ha_state())
 
