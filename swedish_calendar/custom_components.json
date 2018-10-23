@@ -1,0 +1,9 @@
+{
+    "sensor.swedich_calendar": {
+      "version": "0.1",
+      "local_location": "custom_components/sensor/swedish_calendar.py",
+      "remote_location": "https://github.com/Miicroo/homeassistant-custom-components/blob/master/swedish_calendar/swedish_calendar.py",
+      "visit_repo": "https://github.com/Miicroo/homeassistant-custom-components/tree/master/swedish_calendar",
+      "changelog": "https://github.com/Miicroo/homeassistant-custom-components/releases/latest"
+    }
+}

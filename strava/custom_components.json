@@ -1,0 +1,9 @@
+{
+    "sensor.strava": {
+      "version": "0.1",
+      "local_location": "custom_components/sensor/strava.py",
+      "remote_location": "https://github.com/Miicroo/homeassistant-custom-components/blob/master/strava/strava.py",
+      "visit_repo": "https://github.com/Miicroo/homeassistant-custom-components/tree/master/strava",
+      "changelog": "https://github.com/Miicroo/homeassistant-custom-components/releases/latest"
+    }
+}
