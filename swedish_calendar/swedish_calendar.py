@@ -27,17 +27,17 @@ CONF_ATTRIBUTION = 'Data provided by api.dryg.net'
 CONF_EXCLUDE = 'exclude'
 
 SENSOR_TYPES = {
-    'date': ['Date', 'mdi:calendar-today', 'datum'],
-    'weekday': ['Week day', 'mdi:calendar-today', 'veckodag'],
-    'workfree_day': ['Workfree day', 'mdi:beach', 'arbetsfri dag'],
-    'red_day': ['Red Day', 'mdi:pine-tree', 'röd dag'],
-    'week': ['Week', 'mdi:calendar-week', 'vecka'],
-    'day_of_week': ['Day of week', 'mdi:calendar-range', 'dag i vecka'],
-    'eve': ['Eve', 'mdi:ornament-variant', 'helgdagsafton'],
-    'holiday': ['Holiday', 'mdi:ornament', 'helgdag'],
-    'day_before_workfree_holiday': ['Day before workfree holiday', 'mdi:clock-fast', 'dag före arbetsfri helgdag'],
-    'name_day': ['Names celebrated', 'mdi:human-handsup', 'namnsdag'],
-    'flag_day': ['Reason for flagging', 'mdi:flag', 'flaggdag'],
+    'date': ['Date', 'mdi:calendar-today', 'datum', 'unknown'],
+    'weekday': ['Week day', 'mdi:calendar-today', 'veckodag', 'unknown'],
+    'workfree_day': ['Workfree day', 'mdi:beach', 'arbetsfri dag', 'Nej'],
+    'red_day': ['Red Day', 'mdi:pine-tree', 'röd dag', 'Nej'],
+    'week': ['Week', 'mdi:calendar-week', 'vecka', 'unknown'],
+    'day_of_week': ['Day of week', 'mdi:calendar-range', 'dag i vecka', 'unknown'],
+    'eve': ['Eve', 'mdi:ornament-variant', 'helgdagsafton', 'unknown'],
+    'holiday': ['Holiday', 'mdi:ornament', 'helgdag', 'unknown'],
+    'day_before_workfree_holiday': ['Day before workfree holiday', 'mdi:clock-fast', 'dag före arbetsfri helgdag', 'Nej'],
+    'name_day': ['Names celebrated', 'mdi:human-handsup', 'namnsdag', 'unknown'],
+    'flag_day': ['Reason for flagging', 'mdi:flag', 'flaggdag', 'unknown'],
 }
 
 PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
@@ -56,7 +56,8 @@ async def async_setup_platform(hass, config, async_add_entities, discovery_info=
         name = SENSOR_TYPES[sensor_type][0]
         icon = SENSOR_TYPES[sensor_type][1]
         state_key = SENSOR_TYPES[sensor_type][2]
-        devices.append(SwedishCalendarSensor(sensor_type, name, icon, state_key))
+        default_value = SENSOR_TYPES[sensor_type][3]
+        devices.append(SwedishCalendarSensor(sensor_type, name, icon, state_key, default_value))
 
     async_add_entities(devices)
 
@@ -67,12 +68,13 @@ async def async_setup_platform(hass, config, async_add_entities, discovery_info=
 class SwedishCalendarSensor(Entity):
     """Representation of a calendar sensor."""
 
-    def __init__(self, sensor_type, name, icon, state_key):
+    def __init__(self, sensor_type, name, icon, state_key, default_value):
         """Initialize the sensor."""
         self.type = sensor_type
         self._name = name
         self._icon = icon
         self.state_key = state_key
+        self._default_value = default_value
         self._state = None
         self.entity_id = 'sensor.swedish_calendar_{}'.format(sensor_type)
 
@@ -84,7 +86,7 @@ class SwedishCalendarSensor(Entity):
     @property
     def state(self):
         """Return the state of the device."""
-        return self._state
+        return self._state if self._state else self._default_value
 
     @property
     def should_poll(self):
@@ -186,3 +188,4 @@ class SwedishCalendarData:
 
         if tasks:
             await asyncio.wait(tasks, loop=self.hass.loop)
+
