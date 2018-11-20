@@ -14,7 +14,17 @@ sensor:
 4. Restart homeassistant
 
 ### Configuration options
-The following sensor types are supported:
+All sensors are added per default. If a certain sensor isn't available, it will be hidden (for example: type of holiday will be hidden if there is no ongoing holiday). If you do not want a sensor at all, you can manually exclude it:
+~~~~
+# Example configuration.yaml entry with exclusion
+sensor:
+  - platform: swedish_calendar
+    exclude:
+      - date
+      - day_before_workfree_holiday
+~~~~
+
+The following sensor types are supported/can be excluded:
 ~~~~
 date
 weekday
@@ -27,14 +37,4 @@ holiday
 day_before_workfree_holiday
 name_day
 flag_day
-~~~~
-
-All sensors are added per default. If a certain sensor isn't available, it will be hidden (for example: type of holiday will be hidden if there is no ongoing holiday). If you do not want a sensor at all, you can manually exclude it:
-~~~~
-# Example configuration.yaml entry with exclusion
-sensor:
-  - platform: swedish_calendar
-    exclude:
-      - date
-      - day_before_workfree_holiday
 ~~~~
