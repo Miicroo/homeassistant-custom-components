@@ -1,5 +1,5 @@
 # Swedish calendar
-This is a HomeAssistant component for showing data about swedish holidays. It uses the api at *api.dryg.net* to generate statistics as sensors. The sensors are checked once per day (at midnight).
+This is a HomeAssistant sensor for showing data about swedish holidays. It uses the api at *api.dryg.net* to generate statistics as sensors. The sensors are checked once per day (at midnight).
 
 ## How to setup
 
