@@ -15,5 +15,6 @@ birthdays:
     date_of_birth: 1843-09-22
   - name: Elvis
     date_of_birth: 1935-01-08
+    icon: 'mdi:music'
 ~~~~
 4. Restart homeassistant
