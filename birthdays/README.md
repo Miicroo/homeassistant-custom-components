@@ -1,4 +1,4 @@
-# Swedish calendar
+# Birthdays
 This is a HomeAssistant component for tracking birthdays, where the state of each birthday is equal to how many days are left. All birthdays are updated at midnight.
 
 ## How to setup
