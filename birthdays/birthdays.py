@@ -14,11 +14,13 @@ _LOGGER = logging.getLogger(__name__)
 
 CONF_NAME = 'name'
 CONF_DATE_OF_BIRTH = 'date_of_birth'
+CONF_ICON = 'icon'
 DOMAIN = 'birthdays'
 
 BIRTHDAY_CONFIG_SCHEMA = vol.Schema({
     vol.Required(CONF_NAME): cv.string,
     vol.Required(CONF_DATE_OF_BIRTH): cv.date,
+    vol.Optional(CONF_ICON, default='mdi:cake'): cv.string,
 })
 
 CONFIG_SCHEMA = vol.Schema({
@@ -32,7 +34,8 @@ async def async_setup(hass, config):
     for birthday_data in config[DOMAIN]:
         name = birthday_data[CONF_NAME]
         date_of_birth = birthday_data[CONF_DATE_OF_BIRTH]
-        devices.append(BirthdayEntity(name, date_of_birth, hass))
+        icon = birthday_data[CONF_ICON]
+        devices.append(BirthdayEntity(name, date_of_birth, icon, hass))
 
     component = EntityComponent(_LOGGER, DOMAIN, hass)
     await component.async_add_entities(devices)
@@ -45,9 +48,10 @@ async def async_setup(hass, config):
 
 class BirthdayEntity(Entity):
 
-    def __init__(self, name, date_of_birth, hass):
+    def __init__(self, name, date_of_birth, icon, hass):
         self._name = name
         self._date_of_birth = date_of_birth
+        self._icon = icon
         self._age_at_next_birthday = 0
         self._state = None
         self.entity_id = 'birthday.{}'.format(name.replace(' ', '_').replace('-', '_').replace('ö', 'o'))
@@ -63,11 +67,12 @@ class BirthdayEntity(Entity):
 
     @property
     def should_poll(self):
+        # Do not poll, instead we trigger an asynchronous update every day at midnight
         return False
 
     @property
     def icon(self):
-        return 'mdi:cake'
+        return self._icon
 
     @property
     def device_state_attributes(self):
