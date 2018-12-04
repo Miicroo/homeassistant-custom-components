@@ -56,13 +56,13 @@ It is hard to see how many cups of coffee you drink each day if the value never 
 ```
 
 ### Adding UI support
-I use lovelace as default UI in homeassistant, so to give me a good overview of my typical coffee consumption I have a [history graph card](https://www.home-assistant.io/lovelace/history-graph/) showing the past 5 days. In `ui-lovelace.yaml`, add:
+I use lovelace as default UI in homeassistant, so to give myself a good overview of my typical coffee consumption I have a [history graph card](https://www.home-assistant.io/lovelace/history-graph/) showing the past 5 days. In `ui-lovelace.yaml`, add:
 
 ```yaml
 - type: history-graph
   entities:
     - input_number.coffee_counter
-  title: Coffees today
+  title: Coffees
   hours_to_show: 120
 ```
 
