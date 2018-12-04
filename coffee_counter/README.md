@@ -24,7 +24,7 @@ input_number:
 ```
 
 ### Listen to incoming webhook
-The [webhook api](https://www.home-assistant.io/docs/automation/trigger/#webhook-trigger) was added in homeassistant 0.80 and provides a simple entry point to trigger an automation. You do not need to authenticate your requests, but to make it harder for potential attackers your webhook id should be a long random string. For the sake of clarity I will use a short webhook id, but it should be replaced in a real setup. Add an automation with the following webhook trigger:
+The [webhook api](https://www.home-assistant.io/docs/automation/trigger/#webhook-trigger) was added in homeassistant 0.80 and provides a simple entry point to trigger an automation. You do not need to authenticate your requests, but to make it harder for potential attackers your webhook id should be a long random string. For the sake of clarity we will use a short webhook id, but it should be replaced in a real setup. Add an automation with the following webhook trigger:
 
 ```yaml
 - alias: Increment coffee counter
@@ -56,7 +56,7 @@ It is hard to see how many cups of coffee you drink each day if the value never 
 ```
 
 ### Adding UI support
-I use lovelace as default UI in homeassistant, so to give myself a good overview of my typical coffee consumption I have a [history graph card](https://www.home-assistant.io/lovelace/history-graph/) showing the past 5 days. In `ui-lovelace.yaml`, add:
+To give a good overview of our typical coffee consumption we can add a [history graph card](https://www.home-assistant.io/lovelace/history-graph/) showing the past 5 days (note: you have to use lovelace as default UI in homeassistant). In `ui-lovelace.yaml`, add:
 
 ```yaml
 - type: history-graph
