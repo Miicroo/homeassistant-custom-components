@@ -41,7 +41,7 @@ The [webhook api](https://www.home-assistant.io/docs/automation/trigger/#webhook
 Now we have set up our homeassistant to trigger each time we do a POST request with Content-Type: application/json to our endpoint at http://example-ha.duckdns.org:8123/api/webhook/coffee.
 
 ### Reset at midnight
-It is hard to see how many cups of coffee you drink each day if the value never resets. Thus we will add another automation that sets the counter to 0 every day at midnight. Add a new automation with the following content.
+It is hard to see how many cups of coffee you drink each day if the value never resets. Thus we will add another automation that sets the counter to 0 every day at midnight. Add a new automation with the following content:
 
 ```yaml
 - alias: Reset coffee counter
