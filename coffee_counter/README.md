@@ -67,7 +67,7 @@ I use lovelace as default UI in homeassistant, so to give myself a good overview
 ```
 
 ### Add support for mobile
-No system is complete without an easy-to-use interface. It would be a shame if I had to log on to my homeassistant account every time I drank a coffee, actualy the whole point of this setup was to make it easier for me. Thus I am using a mobile app on my phone which lets me instantly increment my counter with a click of an icon. I am currently using [HTTP Shortcuts](https://play.google.com/store/apps/details?id=ch.rmy.android.http_shortcuts&hl=en_US) (which is also [open source](https://github.com/Waboodoo/HTTP-Shortcuts)) to generate an icon on my home screen.
+No system is complete without an easy-to-use interface, and it would be a shame if we had to log on to the homeassistant account every time we wanted to log a new cup of coffee. Instead we will be using a mobile app which lets us instantly increment the counter with a click of an icon. I am currently using [HTTP Shortcuts](https://play.google.com/store/apps/details?id=ch.rmy.android.http_shortcuts&hl=en_US) (which is also [open source](https://github.com/Waboodoo/HTTP-Shortcuts)) to generate an icon on my home screen.
 
 To configure HTTP shortcuts, first add a new shortcut named Coffee (or anything else if you want). Make sure that it is sending a POST to your webhook api endpoint:
 <p align="center">
