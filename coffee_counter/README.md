@@ -88,3 +88,9 @@ When the shortcut is saved, longpress on the name in the app and choose `Place o
 <p>
   <img src="https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/coffee_counter/shortcut4.png" alt="Place icon on home screen!" width="500px" height="888px"/>
 </p>
+
+## Result
+The result is a really use to use shortcut which produces a chart showing the amount of coffee you drink every day.
+<p>
+  <img src="https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/coffee_counter/coffee_chart.png" alt="Coffee chart" width="500px" height="888px"/>
+</p>
