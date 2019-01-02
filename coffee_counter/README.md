@@ -75,7 +75,10 @@ To configure HTTP shortcuts, first add a new shortcut named Coffee (or anything 
 </p>
 
 Make sure that the shortcut sends the Content-Type-header with value application/json, and add an empty body that is still valid json (for instance `{}`). I have also chosen to be notified of the response via a toast:
-![Add Content-Type and body](https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/coffee_counter/shortcut2.png =500x888)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/coffee_counter/shortcut2.png" alt="Add Content-Type and body" width="500px" height="800px"/>
+</p>
+
 Finally, the advanced settings can be left as default:
 <p align="center">
   <img src="https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/coffee_counter/shortcut3.png" alt="Add Content-Type and body" style="width: 50%; height: 50%"/>
