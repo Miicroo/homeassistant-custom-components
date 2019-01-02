@@ -92,5 +92,5 @@ When the shortcut is saved, longpress on the name in the app and choose `Place o
 ## Result
 The result is a really use to use shortcut which produces a chart showing the amount of coffee you drink every day.
 <p>
-  <img src="https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/coffee_counter/coffee_chart.PNG" alt="Coffee chart" width="500px" height="888px"/>
+  <img src="https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/coffee_counter/coffee_chart.PNG" alt="Coffee chart"/>
 </p>
