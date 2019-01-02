@@ -70,21 +70,21 @@ To give a good overview of our typical coffee consumption we can add a [history 
 No system is complete without an easy-to-use interface, and it would be a shame if we had to log on to the homeassistant account every time we wanted to log a new cup of coffee. Instead we will be using a mobile app which lets us instantly increment the counter with a click of an icon. I am currently using [HTTP Shortcuts](https://play.google.com/store/apps/details?id=ch.rmy.android.http_shortcuts&hl=en_US) (which is also [open source](https://github.com/Waboodoo/HTTP-Shortcuts)) to generate an icon on my home screen.
 
 To configure HTTP shortcuts, first add a new shortcut named Coffee (or anything else if you want). Make sure that it is sending a POST to your webhook api endpoint:
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/coffee_counter/shortcut1.png" alt="Shortcut POSTing to your endpoint" style="width: 50%; height: 50%"/>
+<p>
+  <img src="https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/coffee_counter/shortcut1.png" alt="Shortcut POSTing to your endpoint" width="500px" height="888px"/>
 </p>
 
 Make sure that the shortcut sends the Content-Type-header with value application/json, and add an empty body that is still valid json (for instance `{}`). I have also chosen to be notified of the response via a toast:
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/coffee_counter/shortcut2.png" alt="Add Content-Type and body" width="500px" height="800px"/>
+<p>
+  <img src="https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/coffee_counter/shortcut2.png" alt="Add Content-Type and body" width="500px" height="888px"/>
 </p>
 
 Finally, the advanced settings can be left as default:
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/coffee_counter/shortcut3.png" alt="Add Content-Type and body" style="width: 50%; height: 50%"/>
+<p>
+  <img src="https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/coffee_counter/shortcut3.png" alt="Add Content-Type and body" width="500px" height="888px"/>
 </p>
 
 When the shortcut is saved, longpress on the name in the app and choose `Place on home screen` to get a nice clickable icon just a thumb away!
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/coffee_counter/shortcut4.png" alt="Place icon on home screen!" style="width: 50%; height: 50%"/>
+<p>
+  <img src="https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/coffee_counter/shortcut4.png" alt="Place icon on home screen!" width="500px" height="888px"/>
 </p>
