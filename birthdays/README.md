@@ -18,3 +18,16 @@ birthdays:
     icon: 'mdi:music'
 ~~~~
 4. Restart homeassistant
+
+5. Lovelace UI
+I use the birthdays as a simple entity list in lovelace, given the above example use:
+~~~
+# Example use in lovelace
+- type: entities
+  title: Birthdays
+  show_header_toggle: false
+  entities:
+    - birthday.Frodo_Baggins
+    - birthday.Bilbo_Baggins
+    - birthday.Elvis
+~~~
