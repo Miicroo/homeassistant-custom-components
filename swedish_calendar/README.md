@@ -38,3 +38,9 @@ day_before_workfree_holiday
 name_day
 flag_day
 ~~~~
+
+## Result
+Result using [https://github.com/custom-cards/vertical-stack-in-card](vertical-stack-in-card) in lovelace.
+<p>
+  <img src="https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/swedish_calendar/holiday.png" alt="Swedich calendar during holiday"/>
+</p>
