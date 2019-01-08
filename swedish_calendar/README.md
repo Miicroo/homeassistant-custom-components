@@ -40,7 +40,57 @@ flag_day
 ~~~~
 
 ## Result
-Result in lovelace:
+I currently use the sensors in a grid spanning 4 rows, top 2 rows are 3 columns and bottom 2 rows are 2 columns. Th ebottom columns are conditional cards for showing holidays, which are only displayed if there is a value.
+
+~~~
+- type: vertical-stack
+  title: 'Swedish calendar'
+  cards:
+    - type: glance
+      show_name: false
+      entities:
+        - sensor.swedish_calendar_date
+        - sensor.swedish_calendar_weekday
+        - sensor.swedish_calendar_week
+    - type: glance
+      entities:
+        - sensor.swedish_calendar_red_day
+        - sensor.swedish_calendar_workfree_day
+        - sensor.swedish_calendar_day_before_workfree_holiday
+    - type: horizontal-stack
+      cards:
+        - type: conditional
+          conditions:
+            - entity: sensor.swedish_calendar_eve
+              state_not: "unknown"
+          card:
+            type: glance
+            entities:
+              - sensor.swedish_calendar_eve
+        - type: conditional
+          conditions:
+            - entity: sensor.swedish_calendar_holiday
+              state_not: "unknown"
+          card:
+            type: glance
+            entities:
+              - sensor.swedish_calendar_holiday
+    - type: horizontal-stack
+      cards:
+        - type: glance
+          entities:
+            - sensor.swedish_calendar_name_day
+        - type: conditional
+          conditions:
+            - entity: sensor.swedish_calendar_flag_day
+              state_not: "unknown"
+          card:
+            type: glance
+            entities:
+              - sensor.swedish_calendar_flag_day
+~~~
+
+Result in UI:
 <p>
-  <img src="https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/swedish_calendar/holiday.png" alt="Swedich calendar during holiday" width="80%" height="80%"/>
+  <img src="https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/swedish_calendar/holiday.png" alt="Swedish calendar during holiday" width="80%" height="80%"/>
 </p>
