@@ -40,7 +40,7 @@ flag_day
 ~~~~
 
 ## Result
-Result using [https://github.com/custom-cards/vertical-stack-in-card](vertical-stack-in-card) in lovelace.
+Result in lovelace:
 <p>
-  <img src="https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/swedish_calendar/holiday.png" alt="Swedich calendar during holiday"/>
+  <img src="https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/swedish_calendar/holiday.png" alt="Swedich calendar during holiday" width="80%" height="80%"/>
 </p>
