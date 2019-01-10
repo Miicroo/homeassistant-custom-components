@@ -112,7 +112,7 @@ class BirthdayEntity(Entity):
         self._state = days_until_next_birthday
         
         if(days_until_next_birthday == 0) {
-            // Fire event if birthday is today
+            # Fire event if birthday is today
             self.hass.bus.fire('birthday', {'name': self._name, 'age': self._age_at_next_birthday})
         }
 
