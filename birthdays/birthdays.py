@@ -113,7 +113,7 @@ class BirthdayEntity(Entity):
         
         if(days_until_next_birthday == 0) {
             // Fire event if birthday is today
-            // hass.bus.fire('my_cool_event', {'answer': 42})
+            self.hass.bus.fire('birthday', {'name': self._name, 'age': self._age_at_next_birthday})
         }
 
         await self.async_update_ha_state()
