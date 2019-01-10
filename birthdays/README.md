@@ -20,7 +20,7 @@ birthdays:
 4. Restart homeassistant
 
 ## Entities
-All entities are exposed using the format `birthday.{name}`. Any character that does not fit the pattern `a-z`, `A-Z`, `0-9`, or `_` will be removed. For instance `Frodo Baggins` will get entity_id `FrodoBaggins`, and Swedish names like [https://sv.wikipedia.org/wiki/Sven-G%C3%B6ran_Eriksson](`Sven-Göran Eriksson`) will get entity_id `SvenGranEriksson`.
+All entities are exposed using the format `birthday.{name}`. Any character that does not fit the pattern `a-z`, `A-Z`, `0-9`, or `_` will be removed. For instance `Frodo Baggins` will get entity_id `FrodoBaggins`, and Swedish names like [`Sven-Göran Eriksson`](https://sv.wikipedia.org/wiki/Sven-G%C3%B6ran_Eriksson) will get entity_id `SvenGranEriksson`.
 
 ## Automation
 All birthdays are updated at midnight, and when a birthday occurs an event is sent on the HA bus that can be used for automations. The event is called `birthday` and contains the data `name` and `age`. Note that there will be two events fired if two persons have the same birthday.
