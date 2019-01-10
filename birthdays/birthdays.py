@@ -49,12 +49,14 @@ async def async_setup(hass, config):
 class BirthdayEntity(Entity):
 
     def __init__(self, name, date_of_birth, icon, hass):
+        import re
         self._name = name
         self._date_of_birth = date_of_birth
         self._icon = icon
         self._age_at_next_birthday = 0
         self._state = None
-        self.entity_id = 'birthday.{}'.format(name.replace(' ', '_').replace('-', '_').replace('ö', 'o'))
+        name_in_entity_id = re.sub("[^a-zA-Z0-9_]", "", name)
+        self.entity_id = 'birthday.{}'.format(name_in_entity_id)
         self.hass = hass
 
     @property
