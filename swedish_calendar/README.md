@@ -94,3 +94,28 @@ Result in UI:
 <p>
   <img src="https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/swedish_calendar/holiday.png" alt="Swedish calendar during holiday" width="80%" height="80%"/>
 </p>
+
+## Push notification for celebrated names
+To send a push when someone you know celebrates their name, you can use the following automation
+~~~
+- alias: 'Send push on important namnsdag'
+  initial_state: 'on'
+  trigger:
+    - platform: state
+      entity_id: sensor.swedish_calendar_name_day
+  condition:
+    - condition: template
+      value_template: >-
+        {% set names_of_today = states.sensor.swedish_calendar_name_day.state.split(",") %}
+        {% set wanted_names = ['Lisa', 'Kalle', 'Johan', 'Anna'] %}
+        {% for name in names_of_today %}
+          {% if (name in wanted_names) %}
+            true
+          {% endif %}
+        {% endfor %}
+  action:
+    service: notify.pushbullet
+    data_template:
+      title: 'Namnsdag!'
+      message: "Idag firas {{ states.sensor.swedish_calendar_name_day.state }} "
+~~~
