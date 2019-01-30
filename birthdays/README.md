@@ -62,7 +62,7 @@ I use the birthdays as a simple entity list in lovelace, given the above example
   title: Birthdays
   show_header_toggle: false
   entities:
-    - birthday.FrodoBaggins
-    - birthday.BilboBaggins
-    - birthday.Elvis
+    - birthday.frodo_baggins
+    - birthday.bilbo_baggins
+    - birthday.elvis
 ~~~
