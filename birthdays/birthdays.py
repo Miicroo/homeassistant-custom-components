@@ -9,6 +9,7 @@ from homeassistant.helpers.entity import Entity
 from homeassistant.helpers.entity_component import EntityComponent
 from homeassistant.helpers.event import async_call_later
 from homeassistant.util import dt as dt_util
+from homeassistant.util import slugify
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -40,6 +41,7 @@ async def async_setup(hass, config):
     component = EntityComponent(_LOGGER, DOMAIN, hass)
     await component.async_add_entities(devices)
 
+
     tasks = [device.update_data() for device in devices]
     await asyncio.wait(tasks, loop=hass.loop)
 
@@ -49,13 +51,12 @@ async def async_setup(hass, config):
 class BirthdayEntity(Entity):
 
     def __init__(self, name, date_of_birth, icon, hass):
-        import re
         self._name = name
         self._date_of_birth = date_of_birth
         self._icon = icon
         self._age_at_next_birthday = 0
         self._state = None
-        name_in_entity_id = re.sub("[^a-zA-Z0-9_]", "", name)
+        name_in_entity_id = slugify(name)
         self.entity_id = 'birthday.{}'.format(name_in_entity_id)
         self.hass = hass
 
@@ -115,7 +116,7 @@ class BirthdayEntity(Entity):
 
         if days_until_next_birthday == 0:
             # Fire event if birthday is today
-            self.hass.bus.fire('birthday', {'name': self._name, 'age': self._age_at_next_birthday})
+            self.hass.bus.async_fire(event_type='birthday', event_data={'name': self._name, 'age': self._age_at_next_birthday})
 
         await self.async_update_ha_state()
         async_call_later(self.hass, self._get_seconds_until_midnight(), self.update_data)
