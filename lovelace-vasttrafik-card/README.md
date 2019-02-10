@@ -13,7 +13,15 @@ Styled entities using the Västtrafik theme in a lovelace entities card. All tra
 ## Tram and bus styles
  // Show styles here
  
-## Example images
+## Examples
+```yaml
+type: 'custom:vasttrafik-card'
+title: 'Valand <-> Hjalmar Brantingsplatsen'
+entities:
+  - sensor.fran_valand
+  - sensor.fran_hjalmar
+```
+
 ![Example 1](https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/lovelace-vasttrafik-card/resources/1.png)
 ![Example 2](https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/lovelace-vasttrafik-card/resources/2.png)
 ![Example 3](https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/lovelace-vasttrafik-card/resources/3.png)
