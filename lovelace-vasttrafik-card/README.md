@@ -19,6 +19,6 @@ Styled entities using the Västtrafik theme in a lovelace entities card. All tra
 ![Example 3](https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/lovelace-vasttrafik-card/resources/3.png)
 
 ## In case of errors
-1. There is no explicit check to see if the entity id you provide is a Västtrafik-sensor, so you have to be careful
+1. There is no explicit check to see if the entity id you provide is a Västtrafik-sensor, so you have to check yourself
 2. The sensor does not expose from/to, so it is not possible to show that in the card
 3. The sensor updates every 2 minutes, so you will sometimes get `-1 minutes` until departure
