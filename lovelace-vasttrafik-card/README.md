@@ -24,7 +24,7 @@ entities:
 ![Example 3](https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/lovelace-vasttrafik-card/resources/3.png)
 
 ## Tram and bus styles
- // Show styles here
+![Colours for each tram or bus line](https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/lovelace-vasttrafik-card/resources/colours.png)
 
 ## In case of errors
 1. There is no explicit check to see if the entity id you provide is a Västtrafik-sensor, so you have to check yourself
