@@ -13,7 +13,7 @@ from homeassistant.helpers.event import async_call_later
 from homeassistant.helpers.entity import Entity
 from homeassistant.util import Throttle
 
-REQUIREMENTS = ['stravalib==0.9.4']
+REQUIREMENTS = ['stravalib==0.10.2']
 
 _LOGGER = logging.getLogger(__name__)
 
