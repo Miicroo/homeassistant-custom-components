@@ -102,18 +102,19 @@ class DistanceTrackerCard extends Polymer.Element {
     const sortedDistances = this.getDistancesSortedByUnit(unit);
     const firstLargerIndex = sortedDistances.findIndex(d => d.distance > distance);
 
-    const hasPassedAny = firstLargerIndex !== 0;
+    const hasPassedAny = firstLargerIndex > 0;
+    let lastPassed = undefined;
     if(hasPassedAny) {
-    	const lastPassed = sortedDistances[firstLargerIndex - 1];
-	}
-	const nextToPass = sortedDistances[firstLargerIndex];
+    	lastPassed = sortedDistances[firstLargerIndex - 1];
+    }
 
+    const nextToPass = sortedDistances[firstLargerIndex];
     return `<div>
               <h3>${name}</h3>
-              <p>Distance: ${distance} ${unit}</p>` + 
-              (hasPassedAny ? 
-              	`<p> You passed ${lastPassed.name} ${distance-lastPassed.distance} ${unit}s ago <ha-icon icon="${lastPassed.icon}"></ha-icon></p>` :
-              	''
+              <p>Distance: ${distance} ${unit}</p>` +
+              (hasPassedAny ?
+                `<p> You passed ${lastPassed.name} ${distance-lastPassed.distance} ${unit}s ago <ha-icon icon="${lastPassed.icon}"></ha-icon></p>` :
+                ''
               ) +
             `
             <p>Next to pass is ${nextToPass.name} in ${nextToPass.distance-distance} ${unit}s <ha-icon icon="${nextToPass.icon}"></ha-icon></p>
@@ -149,3 +150,4 @@ class DistanceTrackerCard extends Polymer.Element {
   }
 }
 customElements.define('distance-tracker-card', DistanceTrackerCard);
+
