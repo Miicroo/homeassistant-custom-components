@@ -3,8 +3,11 @@ This is a HomeAssistant sensor for showing data about swedish holidays. It uses 
 
 ## How to setup
 
-1. In your homeassistant config directory, create a sensor file. The path should look like this: **my-ha-config-dir/custom_components/swedish_calendar/sensor.py**
-2. Copy the contents of sensor.py in this git-repo to your newly created file in HA
+1. In your homeassistant config directory, create a new directory. The path should look like this: **my-ha-config-dir/custom_components/swedish_calendar**
+2. Download the contents of the following files to the new directory:
+    * sensor.py
+    * __init__.py
+    * manifest.json
 3. Set up the sensor:
 ~~~~
 # Example configuration.yaml entry
