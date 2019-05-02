@@ -79,5 +79,19 @@ All states are converted to the unit system configured in your HA.
   <i>Example of my Strava group in Homeassistant</i>
 </p>
 
+
+## Custom updater support
+If you are using [custom_updater](https://github.com/custom-components/custom_updater) you can use the following config to add strava:
+
+```
+custom_updater:
+  track:
+    - components
+  component_urls:
+    - https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/strava/custom_components.json
+```
+
+(Taken from [custom_updater documentation](https://custom-components.github.io/custom_updater/components))
+
 ## TODO
 * Expose more sensors
