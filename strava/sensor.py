@@ -76,6 +76,8 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
         })])
 })
 
+VERSION = '0.0.1'
+
 @asyncio.coroutine
 def async_setup_platform(hass, config, async_add_devices, discovery_info=None):
     """Set up the Strava sensors."""
