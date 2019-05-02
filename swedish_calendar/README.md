@@ -122,3 +122,17 @@ To send a push when someone you know celebrates their name, you can use the foll
       title: 'Namnsdag!'
       message: "Idag firas {{ states.sensor.swedish_calendar_name_day.state }} "
 ~~~
+
+## Custom updater support
+If you are using [custom_updater](https://github.com/custom-components/custom_updater) you can use the following config to add swedish_calendar:
+
+```
+custom_updater:
+  track:
+    - components
+  component_urls:
+    - https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/swedish_calendar/custom_components.json
+```
+
+
+(Taken from [custom_updater documentation](https://custom-components.github.io/custom_updater/components))
