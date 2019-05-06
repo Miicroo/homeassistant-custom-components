@@ -1,1 +1,1 @@
-
+from .sensor import VERSION
