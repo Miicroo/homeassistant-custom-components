@@ -1,9 +1,13 @@
 {
-    "sensor.strava": {
-      "version": "0.0.1",
-      "local_location": "/custom_components/strava/sensor.py",
-      "remote_location": "https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/strava/sensor.py",
-      "visit_repo": "https://github.com/Miicroo/homeassistant-custom-components/tree/master/strava",
-      "changelog": "https://github.com/Miicroo/homeassistant-custom-components/releases/latest"
-    }
+  "sensor.strava": {
+    "version": "0.0.1",
+    "local_location": "/custom_components/strava/__init__.py",
+    "remote_location": "https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/strava/__init__.py",
+    "visit_repo": "https://github.com/Miicroo/homeassistant-custom-components/tree/master/strava",
+    "changelog": "https://github.com/Miicroo/homeassistant-custom-components/releases/latest",
+    "resources": [
+      "https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/strava/manifest.json",
+      "https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/strava/sensor.py"
+    ]
+  }
 }
