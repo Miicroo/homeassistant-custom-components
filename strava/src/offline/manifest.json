@@ -1,0 +1,8 @@
+{
+    "domain": "sensor",
+    "name": "Strava",
+    "documentation": "https://github.com/Miicroo/homeassistant-custom-components/tree/master/strava",
+    "dependencies": [],
+    "codeowners": ["@Miicroo"],
+    "requirements": []
+}
