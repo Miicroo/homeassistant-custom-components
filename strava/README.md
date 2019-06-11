@@ -92,6 +92,3 @@ custom_updater:
 ```
 
 (Taken from [custom_updater documentation](https://custom-components.github.io/custom_updater/components))
-
-## TODO
-* Expose more sensors
