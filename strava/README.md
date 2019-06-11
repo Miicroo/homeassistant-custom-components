@@ -75,7 +75,7 @@ moving_time
 All states are converted to the unit system configured in your HA.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/strava/strava_example.PNG" alt="Strava HA example"/><br />
+  <img src="https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/strava/resources/strava_example.png" alt="Strava HA example"/><br />
   <i>Example of my Strava group in Homeassistant</i>
 </p>
 
