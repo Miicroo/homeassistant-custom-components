@@ -92,3 +92,9 @@ custom_updater:
 ```
 
 (Taken from [custom_updater documentation](https://custom-components.github.io/custom_updater/components))
+
+
+## FIXME
+Update online/offline readme
+Clean code
+For online sensors, credit to https://github.com/deuxpi/home-assistant-custom-components/tree/master/custom_components/strava
