@@ -45,7 +45,7 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
         vol.All(cv.ensure_list, vol.Length(min=0), [vol.In(SENSOR_TYPES)]),
 })
 
-VERSION = '0.0.1'
+VERSION = '0.0.2-beta'
 
 async def async_setup_platform(hass, config, async_add_entities, discovery_info=None):
     """Set up the calendar sensor."""
