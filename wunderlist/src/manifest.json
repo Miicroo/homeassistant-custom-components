@@ -1,0 +1,10 @@
+{
+  "domain": "wunderlist",
+  "name": "Wunderlist",
+  "documentation": "https://github.com/Miicroo/homeassistant-custom-components/tree/master/wunderlist",
+  "requirements": [
+    "wunderpy2==0.1.6"
+  ],
+  "dependencies": [],
+  "codeowners": ["@Miicroo"]
+}

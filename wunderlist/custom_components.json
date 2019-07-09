@@ -1,0 +1,13 @@
+{
+  "sensor.wunderlist": {
+    "version": "0.0.1",
+    "local_location": "/custom_components/wunderlist/__init__.py",
+    "remote_location": "https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/wunderlist/src/__init__.py",
+    "visit_repo": "https://github.com/Miicroo/homeassistant-custom-components/tree/master/wunderlist",
+    "changelog": "https://github.com/Miicroo/homeassistant-custom-components/releases/latest",
+    "resources": [
+      "https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/wunderlist/src/manifest.json",
+      "https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/wunderlist/src/sensor.py",
+    ]
+  }
+}
