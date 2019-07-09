@@ -51,7 +51,7 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
         vol.All(cv.ensure_list, vol.Length(min=0), [vol.In(SENSOR_TYPES)]),
 })
 
-VERSION = '0.0.2'
+VERSION = '0.0.3'
 
 async def async_setup_platform(hass, config, async_add_entities, discovery_info=None):
     """Set up the calendar sensor."""
@@ -272,5 +272,8 @@ class SpecialThemesSensor(Entity):
         if dateStr in specialThemes:
             events = map(lambda x: x['event'], specialThemes[dateStr])
             self._state = ",".join(events)
+
+            tasks = [self.async_update_ha_state()]
+            await asyncio.wait(tasks, loop=self.hass.loop)
 
         async_call_later(self.hass, get_seconds_until_midnight(), self.fetching_data)
