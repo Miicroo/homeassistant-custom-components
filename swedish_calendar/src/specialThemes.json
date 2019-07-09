@@ -4,17 +4,17 @@
         "link": "https://temadagar.se/kop-temadagar-kalender/"
     },
     "themeDays": {
-        "2019-07-09": [
+        "20190709": [
             {
                 "event": "Internationella dagen för oskadliggörande av handeldvapen"
             }
         ],
-        "2019-07-10": [
+        "20190710": [
             {
                 "event": "Hoya - Porslinsblommans dag"
             }
         ],
-        "2019-07-11": [
+        "20190711": [
             {
                 "event": "FN:s befolkningsdag",
                 "link": "https://temadagar.se/fns-befolkningsdag/"
@@ -23,12 +23,12 @@
                 "event": "Internationella råkostdagen"
             }
         ],
-        "2019-07-12": [
+        "20190712": [
             {
                 "event": "Fulhetens dag"
             }
         ],
-        "2019-07-13": [
+        "20190713": [
             {
                 "event": "Paltdagen"
             },
@@ -36,17 +36,17 @@
                 "event": "Internationella Rock 'N Roll-dagen"
             }
         ],
-        "2019-07-15": [
+        "20190715": [
             {
                 "event": "Tornedalingarnas dag"
             }
         ],
-        "2019-07-16": [
+        "20190716": [
             {
                 "event": "Nationella orgasmdagen"
             }
         ],
-        "2019-07-17": [
+        "20190717": [
             {
                 "event": "Dagen för världsomfattande rättvisa"
             },
@@ -59,12 +59,12 @@
                 "link": "https://temadagar.se/emojins-dag/"
             }
         ],
-        "2019-07-18": [
+        "20190718": [
             {
                 "event": "Internationella Nelson Mandela-dagen"
             }
         ],
-        "2019-07-21": [
+        "20190721": [
             {
                 "event": "Skånska flaggans dag"
             },
@@ -73,17 +73,17 @@
                 "link": "https://temadagar.se/baddraktsfria-dagen/"
             }
         ],
-        "2019-07-22": [
+        "20190722": [
             {
                 "event": "Approximativa pi-dagen"
             }
         ],
-        "2019-07-23": [
+        "20190723": [
             {
                 "event": "Varmkorvens dag"
             }
         ],
-        "2019-07-24": [
+        "20190724": [
             {
                 "event": "Internationella BDSM-dagen"
             },
@@ -91,12 +91,12 @@
                 "event": "Drive-thru dagen"
             }
         ],
-        "2019-07-25": [
+        "20190725": [
             {
                 "event": "Trä nålen-dagen"
             }
         ],
-        "2019-07-26": [
+        "20190726": [
             {
                 "event": "Bellmandagen"
             },
@@ -105,7 +105,7 @@
                 "link": "https://temadagar.se/sysadminday/"
             }
         ],
-        "2019-07-27": [
+        "20190727": [
             {
                 "event": "Sjusovardagen",
                 "link": "https://temadagar.se/sjusovardagen/"
@@ -114,7 +114,7 @@
                 "event": "Gå på styltor-dagen"
             }
         ],
-        "2019-07-28": [
+        "20190728": [
             {
                 "event": "Jakttornets dag"
             },
@@ -123,7 +123,7 @@
                 "link": "https://temadagar.se/varldshepatitdagen/"
             }
         ],
-        "2019-07-29": [
+        "20190729": [
             {
                 "event": "Internationella tigerdagen"
             },
@@ -131,7 +131,7 @@
                 "event": "Lasagnens dag"
             }
         ],
-        "2019-07-30": [
+        "20190730": [
             {
                 "event": "Världsbroderidagen"
             },
@@ -139,12 +139,12 @@
                 "event": "Pocketbokens dag"
             }
         ],
-        "2019-07-31": [
+        "20190731": [
             {
                 "event": "Dagen för ovanliga instrument"
             }
         ],
-        "2019-08-01": [
+        "20190801": [
             {
                 "event": "International IPAday"
             },
@@ -153,13 +153,13 @@
                 "link": "https://temadagar.se/alla-flickvanners-dag/"
             }
         ],
-        "2019-08-02": [
+        "20190802": [
             {
                 "event": "Internationella öldagen",
                 "link": "https://temadagar.se/internationella-oldagen/"
             }
         ],
-        "2019-08-03": [
+        "20190803": [
             {
                 "event": "Internationella fyrdagen"
             },
@@ -178,7 +178,7 @@
                 "link": "https://temadagar.se/hattens-dag/"
             }
         ],
-        "2019-08-04": [
+        "20190804": [
             {
                 "event": "Hembygdsgårdarnas dag"
             },
@@ -189,7 +189,7 @@
                 "event": "Alla systrars dag"
             }
         ],
-        "2019-08-06": [
+        "20190806": [
             {
                 "event": "Hiroshimadagen"
             },
@@ -197,7 +197,7 @@
                 "event": "Internationella dagen för frisk andedräkt"
             }
         ],
-        "2019-08-08": [
+        "20190808": [
             {
                 "event": "Internationella orgasmdagen",
                 "link": "https://temadagar.se/internationella-orgasmdagen/"
@@ -213,7 +213,7 @@
                 "event": "Internationella kattdagen"
             }
         ],
-        "2019-08-09": [
+        "20190809": [
             {
                 "event": "Internationella dagen för världens ursprungsfolk",
                 "link": "https://temadagar.se/internationella-dagen-for-varldens-ursprungsfolk/"
@@ -222,7 +222,7 @@
                 "event": "Rulltårtans dag"
             }
         ],
-        "2019-08-10": [
+        "20190810": [
             {
                 "event": "Larsdagen",
                 "link": "https://temadagar.se/larsdagen/"
@@ -234,30 +234,30 @@
                 "event": "Lejonets dag"
             }
         ],
-        "2019-08-12": [
+        "20190812": [
             {
                 "event": "Internationella ungdomsdagen",
                 "link": "https://temadagar.se/internationella-ungdomsdagen/"
             }
         ],
-        "2019-08-13": [
+        "20190813": [
             {
                 "event": "Vänsterhäntas dag",
                 "link": "https://temadagar.se/vansterhantas-dag/"
             }
         ],
-        "2019-08-15": [
+        "20190815": [
             {
                 "event": "Surströmmingspremiär",
                 "link": "https://temadagar.se/surstrommingspremiar/"
             }
         ],
-        "2019-08-16": [
+        "20190816": [
             {
                 "event": "Berätta ett skämt-dagen"
             }
         ],
-        "2019-08-17": [
+        "20190817": [
             {
                 "event": "Hemlösa djurs dag"
             },
@@ -265,7 +265,7 @@
                 "event": "Internationella geocachingdagen"
             }
         ],
-        "2019-08-19": [
+        "20190819": [
             {
                 "event": "Internationella dagen för humanitärt arbete"
             },
@@ -273,13 +273,13 @@
                 "event": "Luftfartsdagen"
             }
         ],
-        "2019-08-20": [
+        "20190820": [
             {
                 "event": "Honungens Dag",
                 "link": "https://temadagar.se/honungens-dag/"
             }
         ],
-        "2019-08-21": [
+        "20190821": [
             {
                 "event": "World entrepreneurship day"
             },
@@ -287,13 +287,13 @@
                 "event": "Alla pensionärers dag"
             }
         ],
-        "2019-08-22": [
+        "20190822": [
             {
                 "event": "Internationella müslidagen",
                 "link": "https://temadagar.se/internationella-muslidagen/"
             }
         ],
-        "2019-08-23": [
+        "20190823": [
             {
                 "event": "Internationella dagen till minne av slaveriet och dess avskaffande",
                 "link": "https://temadagar.se/internationella-dagen-till-minne-av-slaveriet-och-dess-avskaffande/"
@@ -302,12 +302,12 @@
                 "event": "Köttbullens dag"
             }
         ],
-        "2019-08-24": [
+        "20190824": [
             {
                 "event": "Årsdagen av Plutos degradering"
             }
         ],
-        "2019-08-25": [
+        "20190825": [
             {
                 "event": "Arkeologidagen",
                 "link": "https://temadagar.se/arkeologidagen/"
@@ -316,7 +316,7 @@
                 "event": "Porslinets dag"
             }
         ],
-        "2019-08-26": [
+        "20190826": [
             {
                 "event": "Alla hundars dag"
             },
@@ -324,12 +324,12 @@
                 "event": "Jämställdhetsdagen"
             }
         ],
-        "2019-08-27": [
+        "20190827": [
             {
                 "event": "Sveriges Raoul Wallenbergdag"
             }
         ],
-        "2019-08-29": [
+        "20190829": [
             {
                 "event": "Internationella dagen mot kärnvapenprov",
                 "link": "https://temadagar.se/internationella-dagen-mot-karnvapenprov/"
@@ -339,7 +339,7 @@
                 "link": "https://temadagar.se/polisens-dag/"
             }
         ],
-        "2019-08-31": [
+        "20190831": [
             {
                 "event": "Squaredansens dag"
             },
@@ -350,7 +350,7 @@
                 "event": "Internationella förebildsdagen"
             }
         ],
-        "2019-09-01": [
+        "20190901": [
             {
                 "event": "Dansbandens dag"
             },
@@ -361,23 +361,23 @@
                 "event": "Svampens dag"
             }
         ],
-        "2019-09-02": [
+        "20190902": [
             {
                 "event": "Labor day"
             }
         ],
-        "2019-09-03": [
+        "20190903": [
             {
                 "event": "Skolledarnas dag"
             }
         ],
-        "2019-09-04": [
+        "20190904": [
             {
                 "event": "Dagen för ungas psykiska hälsa",
                 "link": "https://temadagar.se/dagen-for-ungas-psykiska-halsa/"
             }
         ],
-        "2019-09-07": [
+        "20190907": [
             {
                 "event": "Ostronets dag",
                 "link": "https://temadagar.se/ostronets-dag/"
@@ -398,7 +398,7 @@
                 "event": "Scooterns dag"
             }
         ],
-        "2019-09-08": [
+        "20190908": [
             {
                 "event": "Internationella läskunnighetsdagen",
                 "link": "https://temadagar.se/internationella-laskunnighetsdagen/"
@@ -415,13 +415,13 @@
                 "event": "National Grandparents Day"
             }
         ],
-        "2019-09-09": [
+        "20190909": [
             {
                 "event": "Yrkesförarens dag",
                 "link": "https://temadagar.se/yrkesforarens-dag/"
             }
         ],
-        "2019-09-10": [
+        "20190910": [
             {
                 "event": "Internationella suicidpreventiva dagen"
             },
@@ -433,12 +433,12 @@
                 "event": "Världsdagen för teckenspråk"
             }
         ],
-        "2019-09-11": [
+        "20190911": [
             {
                 "event": "Kebabens dag"
             }
         ],
-        "2019-09-12": [
+        "20190912": [
             {
                 "event": "TV-spelsdagen"
             },
@@ -446,19 +446,19 @@
                 "event": "Europeiska Migrändagen"
             }
         ],
-        "2019-09-13": [
+        "20190913": [
             {
                 "event": "Programmer day",
                 "link": "https://temadagar.se/programmer-day/"
             }
         ],
-        "2019-09-14": [
+        "20190914": [
             {
                 "event": "Geologins dag",
                 "link": "https://temadagar.se/geologins-dag/"
             }
         ],
-        "2019-09-15": [
+        "20190915": [
             {
                 "event": "Internationella dagen för demokrati"
             },
@@ -470,18 +470,18 @@
                 "link": "https://temadagar.se/brunchens-dag/"
             }
         ],
-        "2019-09-16": [
+        "20190916": [
             {
                 "event": "Internationella dagen för bevarande av ozonskiktet",
                 "link": "https://temadagar.se/internationella-dagen-for-bevarande-av-ozonskiktet/"
             }
         ],
-        "2019-09-17": [
+        "20190917": [
             {
                 "event": "Höga klackars dag"
             }
         ],
-        "2019-09-18": [
+        "20190918": [
             {
                 "event": "E-bokens dag"
             },
@@ -489,7 +489,7 @@
                 "event": "Surkålens dag"
             }
         ],
-        "2019-09-19": [
+        "20190919": [
             {
                 "event": "Internationella piratdagen",
                 "link": "https://temadagar.se/internationella-piratdagen/"
@@ -498,12 +498,12 @@
                 "event": "Messmörets dag"
             }
         ],
-        "2019-09-20": [
+        "20190920": [
             {
                 "event": "Bålens dag"
             }
         ],
-        "2019-09-21": [
+        "20190921": [
             {
                 "event": "4H-dagen"
             },
@@ -535,7 +535,7 @@
                 "event": "Internationella röd panda-dagen"
             }
         ],
-        "2019-09-22": [
+        "20190922": [
             {
                 "event": "Internationella bilfria dagen"
             },
@@ -543,7 +543,7 @@
                 "event": "Hobbitdagen"
             }
         ],
-        "2019-09-23": [
+        "20190923": [
             {
                 "event": "Hummerpremiären"
             },
@@ -561,12 +561,12 @@
                 "event": "Höstdagjämningen"
             }
         ],
-        "2019-09-24": [
+        "20190924": [
             {
                 "event": "Skiljetecknets dag"
             }
         ],
-        "2019-09-25": [
+        "20190925": [
             {
                 "event": "Skolmjölkens dag",
                 "link": "https://temadagar.se/skolmjolkens-dag/"
@@ -579,13 +579,13 @@
                 "event": "Internationella farmaceutdagen"
             }
         ],
-        "2019-09-26": [
+        "20190926": [
             {
                 "event": "Europeiska språkdagen",
                 "link": "https://temadagar.se/europeiska-sprakdagen/"
             }
         ],
-        "2019-09-27": [
+        "20190927": [
             {
                 "event": "Janssons-dagen",
                 "link": "https://temadagar.se/janssons-dagen/"
@@ -597,7 +597,7 @@
                 "event": "Världsturismdagen"
             }
         ],
-        "2019-09-28": [
+        "20190928": [
             {
                 "event": "Astronomins dag och natt"
             },
@@ -614,7 +614,7 @@
                 "link": "https://temadagar.se/losgodisets-dag/"
             }
         ],
-        "2019-09-29": [
+        "20190929": [
             {
                 "event": "Den helige Mikaels dag"
             },
@@ -642,12 +642,12 @@
                 "event": "Internationella pussdagen"
             }
         ],
-        "2019-09-30": [
+        "20190930": [
             {
                 "event": "International Blasphemy Rights Day"
             }
         ],
-        "2019-10-01": [
+        "20191001": [
             {
                 "event": "Bröstcancerdagen"
             },
@@ -660,7 +660,7 @@
                 "link": "https://temadagar.se/vegetariska-varldsdagen/"
             }
         ],
-        "2019-10-02": [
+        "20191002": [
             {
                 "event": "Internationella ickevåldsdagen"
             },
@@ -668,13 +668,13 @@
                 "event": "Lantbruksdjurens dag"
             }
         ],
-        "2019-10-03": [
+        "20191003": [
             {
                 "event": "Alla pojkvänners dag",
                 "link": "https://temadagar.se/alla-pojkvanners-dag/"
             }
         ],
-        "2019-10-04": [
+        "20191004": [
             {
                 "event": "Djurens dag",
                 "link": "https://temadagar.se/djurens-dag/"
@@ -688,13 +688,13 @@
                 "link": "https://temadagar.se/kanelbullens-dag/"
             }
         ],
-        "2019-10-05": [
+        "20191005": [
             {
                 "event": "Internationella dagen för lärare",
                 "link": "https://temadagar.se/internationella-dagen-for-larare/"
             }
         ],
-        "2019-10-06": [
+        "20191006": [
             {
                 "event": "Gräddtårtans dag"
             },
@@ -706,7 +706,7 @@
                 "event": "Internationella CP-dagen"
             }
         ],
-        "2019-10-07": [
+        "20191007": [
             {
                 "event": "Internationella dagen för boende- och bebyggelsefrågor",
                 "link": "https://temadagar.se/internationella-dagen-for-boende-och-bebyggelsefragor/"
@@ -716,13 +716,13 @@
                 "link": "https://temadagar.se/skolfotografiets-dag/"
             }
         ],
-        "2019-10-08": [
+        "20191008": [
             {
                 "event": "Vägledningens dag",
                 "link": "https://temadagar.se/vagledningens-dag/"
             }
         ],
-        "2019-10-09": [
+        "20191009": [
             {
                 "event": "Internationella dagen för begränsning av naturkatastrofer",
                 "link": "https://temadagar.se/internationella-dagen-for-begransning-av-naturkatastrofer/"
@@ -738,7 +738,7 @@
                 "event": "PANDAS/PANS Awareness Day"
             }
         ],
-        "2019-10-10": [
+        "20191010": [
             {
                 "event": "Världsdagen för mental hälsa",
                 "link": "https://temadagar.se/varldsdagen-for-mental-halsa/"
@@ -760,7 +760,7 @@
                 "event": "Världsdyslexidagen"
             }
         ],
-        "2019-10-11": [
+        "20191011": [
             {
                 "event": "Äggets dag",
                 "link": "https://temadagar.se/aggets-dag/"
@@ -777,7 +777,7 @@
                 "event": "Internationella komma-ut-dagen"
             }
         ],
-        "2019-10-12": [
+        "20191012": [
             {
                 "event": "Civilkuragets dag",
                 "link": "https://temadagar.se/civilkuragets-dag/"
@@ -790,7 +790,7 @@
                 "link": "https://temadagar.se/musikens-dag/"
             }
         ],
-        "2019-10-13": [
+        "20191013": [
             {
                 "event": "International Suit Up Day",
                 "link": "https://temadagar.se/international-suit-up-day/"
@@ -805,7 +805,7 @@
                 "event": "No Bra Day"
             }
         ],
-        "2019-10-14": [
+        "20191014": [
             {
                 "event": "Räkmackans dag",
                 "link": "https://temadagar.se/rakmackans-dag/"
@@ -814,7 +814,7 @@
                 "event": "Världsdagen för synskadade"
             }
         ],
-        "2019-10-15": [
+        "20191015": [
             {
                 "event": "Fetaostens dag",
                 "link": "https://temadagar.se/fetaostens-dag/"
@@ -841,7 +841,7 @@
                 "link": "https://temadagar.se/metoo-dagen/"
             }
         ],
-        "2019-10-16": [
+        "20191016": [
             {
                 "event": "Steve Jobs Day"
             },
@@ -856,7 +856,7 @@
                 "event": "Alla chefers dag"
             }
         ],
-        "2019-10-17": [
+        "20191017": [
             {
                 "event": "Grynkorvens dag",
                 "link": "https://temadagar.se/grynkorvens-dag/"
@@ -870,7 +870,7 @@
                 "link": "https://temadagar.se/maltidens-dag/"
             }
         ],
-        "2019-10-18": [
+        "20191018": [
             {
                 "event": "Internationella klimakteriedagen",
                 "link": "https://temadagar.se/internationella-klimakteriedagen/"
@@ -889,7 +889,7 @@
                 "event": "Kemins dag"
             }
         ],
-        "2019-10-19": [
+        "20191019": [
             {
                 "event": "Hörselskadades dag",
                 "link": "https://temadagar.se/horselskadades-dag/"
@@ -901,7 +901,7 @@
                 "event": "Nationella dagen för Strävhårig Foxterrier"
             }
         ],
-        "2019-10-20": [
+        "20191020": [
             {
                 "event": "Internationella flygledardagen"
             },
@@ -912,7 +912,7 @@
                 "event": "Internationella osteoporosdagen"
             }
         ],
-        "2019-10-22": [
+        "20191022": [
             {
                 "event": "INTERNATIONELLA CAPS LOCK-DAGEN",
                 "link": "https://temadagar.se/internationella-caps-lock-dagen/"
@@ -921,13 +921,13 @@
                 "event": "Internationella stamningsdagen"
             }
         ],
-        "2019-10-23": [
+        "20191023": [
             {
                 "event": "Internationella moldagen",
                 "link": "https://temadagar.se/internationella-moldagen/"
             }
         ],
-        "2019-10-24": [
+        "20191024": [
             {
                 "event": "FN-dagen",
                 "link": "https://temadagar.se/fn-dagen/"
@@ -945,12 +945,12 @@
                 "link": "https://temadagar.se/raggsockans-dag/"
             }
         ],
-        "2019-10-25": [
+        "20191025": [
             {
                 "event": "Världspastadagen"
             }
         ],
-        "2019-10-26": [
+        "20191026": [
             {
                 "event": "Hackkorvens dag",
                 "link": "https://temadagar.se/hackkorvens-dag/"
@@ -968,7 +968,7 @@
                 "link": "https://temadagar.se/hjarnskadedagen/"
             }
         ],
-        "2019-10-27": [
+        "20191027": [
             {
                 "event": "Internationella nalledagen",
                 "link": "https://temadagar.se/internationella-nalledagen/"
@@ -984,7 +984,7 @@
                 "event": "Alla svärmödrars dag"
             }
         ],
-        "2019-10-28": [
+        "20191028": [
             {
                 "event": "Bilens dag",
                 "link": "https://temadagar.se/bilens-dag/"
@@ -993,7 +993,7 @@
                 "event": "Internationella animationens dag"
             }
         ],
-        "2019-10-29": [
+        "20191029": [
             {
                 "event": "Internationella psoriasisdagen",
                 "link": "https://temadagar.se/internationella-psoriasisdagen/"
@@ -1002,12 +1002,12 @@
                 "event": "Internets dag"
             }
         ],
-        "2019-10-30": [
+        "20191030": [
             {
                 "event": "Dennis Ritchie Day"
             }
         ],
-        "2019-10-31": [
+        "20191031": [
             {
                 "event": "Grannens dag",
                 "link": "https://temadagar.se/grannens-dag/"
@@ -1023,7 +1023,7 @@
                 "event": "Magins dag"
             }
         ],
-        "2019-11-01": [
+        "20191101": [
             {
                 "event": "Internationella vegandagen",
                 "link": "https://temadagar.se/internationella-vegandagen/"
@@ -1036,7 +1036,7 @@
                 "event": "Allhelgonadagen"
             }
         ],
-        "2019-11-02": [
+        "20191102": [
             {
                 "event": "Alla helgons dag",
                 "link": "https://temadagar.se/alla-helgons-dag/"
@@ -1045,12 +1045,12 @@
                 "event": "De dödas dag"
             }
         ],
-        "2019-11-03": [
+        "20191103": [
             {
                 "event": "Alla Själars dag"
             }
         ],
-        "2019-11-04": [
+        "20191104": [
             {
                 "event": "Frysrättens dag",
                 "link": "https://temadagar.se/frysrattens-dag/"
@@ -1059,7 +1059,7 @@
                 "event": "No hate day"
             }
         ],
-        "2019-11-05": [
+        "20191105": [
             {
                 "event": "Guy Fawkes Day"
             },
@@ -1071,7 +1071,7 @@
                 "event": "Internationella frivilligsamordnardagen"
             }
         ],
-        "2019-11-06": [
+        "20191106": [
             {
                 "event": "Gustav Adolfsdagen",
                 "link": "https://temadagar.se/gustav-adolfsdagen/"
@@ -1081,7 +1081,7 @@
                 "link": "https://temadagar.se/internationella-dagen-for-att-forhindra-exploatering-av-miljon-i-krig-och-vapnade-konflikter/"
             }
         ],
-        "2019-11-07": [
+        "20191107": [
             {
                 "event": "Internationella stoutdagen"
             },
@@ -1090,12 +1090,12 @@
                 "link": "https://temadagar.se/kladdkakans-dag/"
             }
         ],
-        "2019-11-08": [
+        "20191108": [
             {
                 "event": "Infraservicedagen"
             }
         ],
-        "2019-11-09": [
+        "20191109": [
             {
                 "event": "Arkivens dag"
             },
@@ -1104,7 +1104,7 @@
                 "link": "https://temadagar.se/frimarkets-dag/"
             }
         ],
-        "2019-11-10": [
+        "20191110": [
             {
                 "event": "Fars dag",
                 "link": "https://temadagar.se/fars-dag/"
@@ -1117,7 +1117,7 @@
                 "link": "https://temadagar.se/varldsdagen-for-vetenskap-for-fred-och-utveckling/"
             }
         ],
-        "2019-11-11": [
+        "20191111": [
             {
                 "event": "Chokladens dag",
                 "link": "https://temadagar.se/chokladens-dag/"
@@ -1137,7 +1137,7 @@
                 "link": "https://temadagar.se/gron-flagg-dagen/"
             }
         ],
-        "2019-11-12": [
+        "20191112": [
             {
                 "event": "Alla krossade hjärtans dag"
             },
@@ -1152,12 +1152,12 @@
                 "link": "https://temadagar.se/globala-lunginflammationsdagen/"
             }
         ],
-        "2019-11-13": [
+        "20191113": [
             {
                 "event": "Smörgåstårtans dag"
             }
         ],
-        "2019-11-14": [
+        "20191114": [
             {
                 "event": "Internationella diabetesdagen",
                 "link": "https://temadagar.se/internationella-diabetesdagen/"
@@ -1174,7 +1174,7 @@
                 "link": "https://temadagar.se/world-usability-day/"
             }
         ],
-        "2019-11-15": [
+        "20191115": [
             {
                 "event": "Fängslade författares dag",
                 "link": "https://temadagar.se/fangslade-forfattares-dag/"
@@ -1184,7 +1184,7 @@
                 "link": "https://temadagar.se/musikterapins-dag/"
             }
         ],
-        "2019-11-16": [
+        "20191116": [
             {
                 "event": "Internationella dagen för tolerans",
                 "link": "https://temadagar.se/internationella-dagen-for-tolerans/"
@@ -1194,7 +1194,7 @@
                 "link": "https://temadagar.se/mangkulturella-matdagen/"
             }
         ],
-        "2019-11-17": [
+        "20191117": [
             {
                 "event": "Internationella prematurdagen"
             },
@@ -1212,7 +1212,7 @@
                 "event": "Internationella elevdagen"
             }
         ],
-        "2019-11-18": [
+        "20191118": [
             {
                 "event": "Adoptionernas Dag"
             },
@@ -1223,7 +1223,7 @@
                 "event": "Benbuljongens dag"
             }
         ],
-        "2019-11-19": [
+        "20191119": [
             {
                 "event": "Internationella mansdagen",
                 "link": "https://temadagar.se/internationella-mansdagen/"
@@ -1249,7 +1249,7 @@
                 "event": "Raggmunkens dag"
             }
         ],
-        "2019-11-20": [
+        "20191120": [
             {
                 "event": "Barnkonventionsdagen",
                 "link": "https://temadagar.se/barnkonventionsdagen/"
@@ -1273,7 +1273,7 @@
                 "link": "https://temadagar.se/transgender-day-of-remembrance/"
             }
         ],
-        "2019-11-21": [
+        "20191121": [
             {
                 "event": "Världsfilosofidagen",
                 "link": "https://temadagar.se/varldsfilosofidagen/"
@@ -1294,7 +1294,7 @@
                 "link": "https://temadagar.se/thanksgiving/"
             }
         ],
-        "2019-11-22": [
+        "20191122": [
             {
                 "event": "Wienerbrödets dag"
             },
@@ -1306,7 +1306,7 @@
                 "event": "Black Friday"
             }
         ],
-        "2019-11-23": [
+        "20191123": [
             {
                 "event": "Sankt Clements dag"
             },
@@ -1314,7 +1314,7 @@
                 "event": "Internationella hattdagen"
             }
         ],
-        "2019-11-25": [
+        "20191125": [
             {
                 "event": "Internationella dagen för bekämpning av våld mot kvinnor",
                 "link": "https://temadagar.se/internationella-dagen-for-bekampning-av-vald-mot-kvinnor/"
@@ -1323,13 +1323,13 @@
                 "event": "Cyber Monday"
             }
         ],
-        "2019-11-28": [
+        "20191128": [
             {
                 "event": "Flaskmatardagen",
                 "link": "https://temadagar.se/flaskmatardagen/"
             }
         ],
-        "2019-11-29": [
+        "20191129": [
             {
                 "event": "Internationella solidaritetsdagen med det palestinska folket"
             },
@@ -1341,7 +1341,7 @@
                 "event": "Vinylskivans dag"
             }
         ],
-        "2019-11-30": [
+        "20191130": [
             {
                 "event": "En köpfri dag",
                 "link": "https://temadagar.se/en-kopfri-dag/"
@@ -1360,7 +1360,7 @@
                 "event": "Andersdagen"
             }
         ],
-        "2019-12-01": [
+        "20191201": [
             {
                 "event": "Brandvarnardagen"
             },
@@ -1381,13 +1381,13 @@
                 "link": "https://temadagar.se/gloggens-dag/"
             }
         ],
-        "2019-12-02": [
+        "20191202": [
             {
                 "event": "Internationella dagen för avskaffande av slaveri",
                 "link": "https://temadagar.se/internationella-dagen-for-avskaffande-av-slaveri/"
             }
         ],
-        "2019-12-03": [
+        "20191203": [
             {
                 "event": "Drick en öl-dagen"
             },
@@ -1402,36 +1402,36 @@
                 "event": "Giving Tuesday"
             }
         ],
-        "2019-12-04": [
+        "20191204": [
             {
                 "event": "Armbandsklockans dag"
             }
         ],
-        "2019-12-05": [
+        "20191205": [
             {
                 "event": "Internationella dagen för frivilligas arbete för ekonomisk och social utveckling",
                 "link": "https://temadagar.se/internationella-dagen-for-frivilligas-arbete-for-ekonomisk-och-social-utveckling/"
             }
         ],
-        "2019-12-06": [
+        "20191206": [
             {
                 "event": "Saint Nicholas Day",
                 "link": "https://temadagar.se/saint-nicholas-day/"
             }
         ],
-        "2019-12-07": [
+        "20191207": [
             {
                 "event": "Internationella dagen för civil luftfart",
                 "link": "https://temadagar.se/internationella-dagen-for-civil-luftfart/"
             }
         ],
-        "2019-12-08": [
+        "20191208": [
             {
                 "event": "Andra advent",
                 "link": "https://temadagar.se/andra-advent/"
             }
         ],
-        "2019-12-09": [
+        "20191209": [
             {
                 "event": "Internationella dagen mot korruption",
                 "link": "https://temadagar.se/internationella-dagen-mot-korruption/"
@@ -1447,7 +1447,7 @@
                 "event": "Läkarsekreterarens dag"
             }
         ],
-        "2019-12-10": [
+        "20191210": [
             {
                 "event": "Internationella djurrättsdagen"
             },
@@ -1464,7 +1464,7 @@
                 "link": "https://temadagar.se/terra-madre-day/"
             }
         ],
-        "2019-12-11": [
+        "20191211": [
             {
                 "event": "Internationella dagen för världens berg",
                 "link": "https://temadagar.se/internationella-dagen-for-varldens-berg/"
@@ -1473,23 +1473,23 @@
                 "event": "Tangons dag"
             }
         ],
-        "2019-12-12": [
+        "20191212": [
             {
                 "event": "Julstjärnans dag"
             }
         ],
-        "2019-12-13": [
+        "20191213": [
             {
                 "event": "Luciadagen",
                 "link": "https://temadagar.se/luciadagen/"
             }
         ],
-        "2019-12-14": [
+        "20191214": [
             {
                 "event": "Internationella ap-dagen"
             }
         ],
-        "2019-12-15": [
+        "20191215": [
             {
                 "event": "Tredje advent",
                 "link": "https://temadagar.se/tredje-advent/"
@@ -1498,7 +1498,7 @@
                 "event": "Internationella tedagen"
             }
         ],
-        "2019-12-18": [
+        "20191218": [
             {
                 "event": "Internationella migrationsdagen",
                 "link": "https://temadagar.se/internationella-migrationsdagen/"
@@ -1507,7 +1507,7 @@
                 "event": "Kakans dag"
             }
         ],
-        "2019-12-20": [
+        "20191220": [
             {
                 "event": "Internationella mänskliga solidaritetens dag",
                 "link": "https://temadagar.se/internationella-manskliga-solidaritetens-dag/"
@@ -1516,7 +1516,7 @@
                 "event": "Jultröjans dag"
             }
         ],
-        "2019-12-21": [
+        "20191221": [
             {
                 "event": "Tomasdagen"
             },
@@ -1529,7 +1529,7 @@
                 "link": "https://temadagar.se/skumtomtens-dag-/"
             }
         ],
-        "2019-12-22": [
+        "20191222": [
             {
                 "event": "Fjärde advent",
                 "link": "https://temadagar.se/fjarde-advent/"
@@ -1538,39 +1538,39 @@
                 "event": "Vintersolståendet"
             }
         ],
-        "2019-12-24": [
+        "20191224": [
             {
                 "event": "Julafton",
                 "link": "https://temadagar.se/julafton/"
             }
         ],
-        "2019-12-25": [
+        "20191225": [
             {
                 "event": "Juldagen"
             }
         ],
-        "2019-12-26": [
+        "20191226": [
             {
                 "event": "Annandag jul"
             }
         ],
-        "2019-12-27": [
+        "20191227": [
             {
                 "event": "Nationella regifting-dagen"
             }
         ],
-        "2019-12-28": [
+        "20191228": [
             {
                 "event": "Värnlösa barns dag"
             }
         ],
-        "2019-12-29": [
+        "20191229": [
             {
                 "event": "Statisternas dag",
                 "link": "https://temadagar.se/statisternas-dag/"
             }
         ],
-        "2019-12-31": [
+        "20191231": [
             {
                 "event": "Nyårsafton",
                 "link": "https://temadagar.se/nyarsafton/"

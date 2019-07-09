@@ -1,22 +1,39 @@
 # Swedish calendar
 This is a HomeAssistant sensor for showing data about swedish holidays. It uses the api at *api.dryg.net* to generate statistics as sensors. The sensors are checked once per day (at midnight).
 
-## How to setup
+## Installation
 
+### Manual
 1. In your homeassistant config directory, create a new directory. The path should look like this: **my-ha-config-dir/custom_components/swedish_calendar**
-2. Download the contents of the following files to the new directory:
+2. Download the contents of the following files (from src) to the new directory:
     * sensor.py
     * \_\_init\_\_.py
     * manifest.json
-3. Set up the sensor:
+    * specialThemes.json
+
+### Custom updater
+If you are using [custom_updater](https://github.com/custom-components/custom_updater) you can use the following config to add swedish_calendar:
+
+```
+custom_updater:
+  track:
+    - components
+  component_urls:
+    - https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/swedish_calendar/custom_components.json
+```
+(Taken from [custom_updater documentation](https://custom-components.github.io/custom_updater/components))
+
+## Configuration
+Set up the sensor in `configuration.yaml`:
 ~~~~
 # Example configuration.yaml entry
 sensor:
   - platform: swedish_calendar
 ~~~~
-4. Restart homeassistant
 
-### Configuration options
+Restart homeassistant
+
+### Options
 All sensors are added per default. If a certain sensor isn't available, it will be hidden (for example: type of holiday will be hidden if there is no ongoing holiday). If you do not want a sensor at all, you can manually exclude it:
 ~~~~
 # Example configuration.yaml entry with exclusion
@@ -42,8 +59,17 @@ name_day
 flag_day
 ~~~~
 
+### Special themes
+If you would like to incude data about special themes/days, like Kanelbullens dag, you can add the directory where you downloaded the `specialThemes.json` to the config (usually `/home/homeassistant/.homeassistant/custom_components/swedish_calendar`). Example config:
+~~~~
+# Example configuration.yaml entry with exclusion
+sensor:
+  - platform: swedish_calendar
+    special_themes_dir: /home/homeassistant/.homeassistant/custom_components/swedish_calendar
+~~~~
+
 ## Result
-I currently use the sensors in a grid spanning 4 rows, top 2 rows are 3 columns and bottom 2 rows are 2 columns. Th ebottom columns are conditional cards for showing holidays, which are only displayed if there is a value.
+I currently use the sensors in a grid spanning 5 rows, top 2 rows are 3 columns and bottom 2 rows are 2 columns. The bottom columns are conditional cards for showing holidays, which are only displayed if there is a value.
 
 ~~~
 - type: vertical-stack
@@ -91,11 +117,27 @@ I currently use the sensors in a grid spanning 4 rows, top 2 rows are 3 columns 
             type: glance
             entities:
               - sensor.swedish_calendar_flag_day
+    - type: horizontal-stack
+      cards:
+      - type: conditional
+        card:
+          entities:
+            - sensor.swedish_calendar_theme_day
+          type: glance
+        conditions:
+          - entity: sensor.swedish_calendar_theme_day
+            state_not: unknown
+            
 ~~~
 
-Result in UI:
+Result in UI during holiday:
 <p>
-  <img src="https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/swedish_calendar/holiday.png" alt="Swedish calendar during holiday" width="80%" height="80%"/>
+  <img src="https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/swedish_calendar/assets/holiday.png" alt="Swedish calendar during holiday" width="80%" height="80%"/>
+</p>
+
+Result in UI with special themes included:
+<p>
+  <img src="https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/swedish_calendar/assets/specialThemes.png" alt="Swedish calendar with special themes" width="80%" height="80%"/>
 </p>
 
 ## Push notification for celebrated names
@@ -122,17 +164,3 @@ To send a push when someone you know celebrates their name, you can use the foll
       title: 'Namnsdag!'
       message: "Idag firas {{ states.sensor.swedish_calendar_name_day.state }} "
 ~~~
-
-## Custom updater support
-If you are using [custom_updater](https://github.com/custom-components/custom_updater) you can use the following config to add swedish_calendar:
-
-```
-custom_updater:
-  track:
-    - components
-  component_urls:
-    - https://raw.githubusercontent.com/Miicroo/homeassistant-custom-components/master/swedish_calendar/custom_components.json
-```
-
-
-(Taken from [custom_updater documentation](https://custom-components.github.io/custom_updater/components))

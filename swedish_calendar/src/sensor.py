@@ -11,6 +11,7 @@ from random import randrange
 
 import aiohttp
 import async_timeout
+import os
 import voluptuous as vol
 
 import homeassistant.helpers.config_validation as cv
@@ -24,7 +25,11 @@ from homeassistant.util import dt as dt_util
 _LOGGER = logging.getLogger(__name__)
 
 CONF_ATTRIBUTION = 'Data provided by api.dryg.net'
+CONF_ATTRIBUTION_SPECIAL_THEMES = 'Data provided by https://temadagar.se. For full calendar, see https://temadagar.se/kop-temadagar-kalender/'
 CONF_EXCLUDE = 'exclude'
+CONF_SPECIAL_THEMES_DIR = 'special_themes_dir'
+
+SPECIAL_THEMES_PATH = 'specialThemes.json'
 
 SENSOR_TYPES = {
     'date': ['Date', 'mdi:calendar-today', 'datum', 'unknown'],
@@ -41,16 +46,23 @@ SENSOR_TYPES = {
 }
 
 PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
+    vol.Optional(CONF_SPECIAL_THEMES_DIR, default=None): cv.string,
     vol.Optional(CONF_EXCLUDE, default=[]):
         vol.All(cv.ensure_list, vol.Length(min=0), [vol.In(SENSOR_TYPES)]),
 })
 
-VERSION = '0.0.2-beta'
+VERSION = '0.0.2'
 
 async def async_setup_platform(hass, config, async_add_entities, discovery_info=None):
     """Set up the calendar sensor."""
 
     devices = []
+    specialThemesPath = os.path.join(config[CONF_SPECIAL_THEMES_DIR], SPECIAL_THEMES_PATH)
+    if config[CONF_SPECIAL_THEMES_DIR] is not None and os.path.exists(specialThemesPath):
+        themeSensor = SpecialThemesSensor(hass, specialThemesPath)
+        async_add_entities([themeSensor])
+        await themeSensor.fetching_data()
+
     included_sensor_types = [sensor_type for sensor_type in SENSOR_TYPES if sensor_type not in config[CONF_EXCLUDE]]
 
     for sensor_type in included_sensor_types:
@@ -190,3 +202,75 @@ class SwedishCalendarData:
         if tasks:
             await asyncio.wait(tasks, loop=self.hass.loop)
 
+class SpecialThemesSensor(Entity):
+
+    def __init__(self, hass, theme_path):
+        self.hass = hass
+        self._state = None
+        self.entity_id = 'sensor.swedish_calendar_theme_day'
+        self._theme_path = theme_path
+
+    @property
+    def name(self):
+        return 'Special Themes'
+
+    @property
+    def state(self):
+        """Return the state of the device."""
+        return self._state
+
+    @property
+    def should_poll(self):
+        return False
+
+    @property
+    def icon(self):
+        return None
+
+    @property
+    def device_state_attributes(self):
+        return {
+            ATTR_ATTRIBUTION: CONF_ATTRIBUTION_SPECIAL_THEMES
+        }
+
+    @property
+    def unit_of_measurement(self):
+        return None
+
+    @property
+    def hidden(self):
+        """Return hidden if it should not be visible in GUI"""
+        return self._state is None or self._state == ""
+
+    async def fetching_data(self, *_):
+        import json
+
+        def retry(err: str):
+            minutes = 60
+            _LOGGER.error("Retrying in %i minutes: %s", minutes, err)
+            async_call_later(self.hass, minutes*60, self.fetching_data)
+
+        def get_seconds_until_midnight():
+            one_day_in_seconds = 24 * 60 * 60
+
+            now = dt_util.now()
+            total_seconds_passed_today = (now.hour*60*60) + (now.minute*60) + now.second
+
+            return one_day_in_seconds - total_seconds_passed_today
+
+        try:
+            with open(self._theme_path, 'r') as dataFile:
+                data = json.load(dataFile)
+        except json.JSONDecodeError as err:
+            retry(err)
+            return
+
+        specialThemes = data['themeDays']
+        date = dt_util.start_of_local_day()
+        dateStr = date.strftime('%Y%m%d')
+
+        if dateStr in specialThemes:
+            events = map(lambda x: x['event'], specialThemes[dateStr])
+            self._state = ",".join(events)
+
+        async_call_later(self.hass, get_seconds_until_midnight(), self.fetching_data)
