@@ -46,22 +46,24 @@ SENSOR_TYPES = {
 }
 
 PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
-    vol.Optional(CONF_SPECIAL_THEMES_DIR, default=None): cv.string,
+    vol.Optional(CONF_SPECIAL_THEMES_DIR, default=''): cv.string,
     vol.Optional(CONF_EXCLUDE, default=[]):
         vol.All(cv.ensure_list, vol.Length(min=0), [vol.In(SENSOR_TYPES)]),
 })
 
-VERSION = '0.0.3'
+VERSION = '0.0.4'
 
 async def async_setup_platform(hass, config, async_add_entities, discovery_info=None):
     """Set up the calendar sensor."""
 
     devices = []
-    specialThemesPath = os.path.join(config[CONF_SPECIAL_THEMES_DIR], SPECIAL_THEMES_PATH)
-    if config[CONF_SPECIAL_THEMES_DIR] is not None and os.path.exists(specialThemesPath):
-        themeSensor = SpecialThemesSensor(hass, specialThemesPath)
-        async_add_entities([themeSensor])
-        await themeSensor.fetching_data()
+    _LOGGER.warn(config)
+    if config[CONF_SPECIAL_THEMES_DIR]:
+        specialThemesPath = os.path.join(config[CONF_SPECIAL_THEMES_DIR], SPECIAL_THEMES_PATH)
+        if os.path.exists(specialThemesPath):
+            themeSensor = SpecialThemesSensor(hass, specialThemesPath)
+            async_add_entities([themeSensor])
+            await themeSensor.fetching_data()
 
     included_sensor_types = [sensor_type for sensor_type in SENSOR_TYPES if sensor_type not in config[CONF_EXCLUDE]]
 
