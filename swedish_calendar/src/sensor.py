@@ -57,7 +57,6 @@ async def async_setup_platform(hass, config, async_add_entities, discovery_info=
     """Set up the calendar sensor."""
 
     devices = []
-    _LOGGER.warn(config)
     if config[CONF_SPECIAL_THEMES_DIR]:
         specialThemesPath = os.path.join(config[CONF_SPECIAL_THEMES_DIR], SPECIAL_THEMES_PATH)
         if os.path.exists(specialThemesPath):
